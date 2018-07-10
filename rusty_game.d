@@ -1,0 +1,1 @@
+C:\Users\niedzwiedzstudio\rust_projects\target\wasm32-unknown-unknown\release\rusty_game.wasm: C:\Users\niedzwiedzstudio\rust_projects\src\constants.rs C:\Users\niedzwiedzstudio\rust_projects\src\draw.rs C:\Users\niedzwiedzstudio\rust_projects\src\game.rs C:\Users\niedzwiedzstudio\rust_projects\src\main.rs
