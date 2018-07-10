@@ -1,7 +1,9 @@
 use std::rc::Rc;
 use std::cell::{RefCell};
+use std::time::Instant;
 //use std::borrow::BorrowMut;
 
+#[macro_use]
 extern crate stdweb;
 use stdweb::web;
 
@@ -9,18 +11,19 @@ mod game;
 mod draw;
 mod constants;
 
-
+use constants::GAME_TICK;
 use game::Game;
-
 // Shamelessly stolen from webplatform's TodoMVC example.
-macro_rules! enclose {
-    ( ($( $x:ident ),*) $y:expr ) => {
-        {
-            $(let $x = $x.clone();)*
-            $y
-        }
-    };
-}
+//macro_rules! enclose {
+//    ( ($( $x:ident ),*) $y:expr ) => {
+//        {
+//            $(let $x = $x.clone();)*
+//            $y
+//        }
+//    };
+//}
+
+
 
 fn main_loop(game: Rc<RefCell<Game>>) {
 //    game.logic_step();

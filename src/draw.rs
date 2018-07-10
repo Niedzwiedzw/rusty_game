@@ -16,8 +16,8 @@ fn color_of<'a>(cell: &'a BoardCell) -> &'a str {
 pub fn draw_square(context: &CanvasRenderingContext2d, x: u32, y: u32, size: u32, cell: &BoardCell) {
     context.set_fill_style_color(color_of(cell));
     context.fill_rect(
-        x as f64,
-        y as f64,
+        (x as f64)*7.0,
+        (y as f64)*7.0,
         size as f64,
         size as f64,
     );
